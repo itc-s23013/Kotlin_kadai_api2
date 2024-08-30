@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
 
                         listView.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
                             val selectedSpell = spells[position]
-
                             val dialog = AlertDialog.Builder(this@MainActivity)
                                 .setTitle(selectedSpell.name)
                                 .setMessage(selectedSpell.description)
