@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
                         val adapter = ArrayAdapter(this@MainActivity, android.R.layout.simple_list_item_1, spellNames)
                         listView.adapter = adapter
 
-                        // クリックリスナーの中でダイアログを表示
                         listView.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
                             val selectedSpell = spells[position]
 
